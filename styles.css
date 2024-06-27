@@ -532,21 +532,23 @@ section.servicos{
 
 .card-img {
     flex: 0 0 auto;
-    width: 240px;
-    height: 280px;
+    max-width: 250px ;
+    max-height: 280px ;
     overflow: hidden;
     border-radius: 30px;
     border: #043c4c 10px solid;
     transition: width 0.3s, height 0.3s, box-shadow 0.3s;
     position: relative;
-    margin: 10px; /* Ajuste a margem conforme necessário */
+    margin: 20px; /* Ajuste a margem conforme necessário */
+
 }
 
 .card-img:hover {
-    width: 300px;
-    height: 350px;
+    min-width: 300px ;
+    min-height: 350px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
+
 
 .card-img img {
     display: block;
@@ -563,7 +565,7 @@ section.servicos{
     height: 100%;
     opacity: 0;
     transition: opacity 0.3s ease;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     text-align: start;
     background-color: rgba(255, 255, 255, 0.5);
 }
